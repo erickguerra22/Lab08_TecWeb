@@ -1,0 +1,98 @@
+.styles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.styles input {
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 1.2em;
+    border-bottom: 0.2em solid currentColor;
+    width: fit-content;
+    background: none;
+}
+
+.styles label {
+    width: fit-content;
+    min-width: 2em;
+    text-align: center;
+}
+
+.styles input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    cursor: pointer;
+}
+
+.styles input[type="checkbox"]:focus,
+.styles input[type="checkbox"]:hover {
+    box-shadow: 0 4px 12px -6px #EFE61F;
+    color: #EFE61F;
+}
+
+.styles input[type="checkbox"]:checked {
+    background-color: #EFE61F;
+    color: #EFE61F;
+    width: 0.8em;
+    height: 0.8em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.styles input:hover,
+.styles input:focus {
+    border-bottom-color: #EFE61F;
+    -webkit-box-shadow: 0 4px 6px -6px #EFE61F;
+    -moz-box-shadow: 0 4px 6px -6px #EFE61F;
+    box-shadow: 0 4px 12px -6px #EFE61F;
+}
+
+.styles input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.styles button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.styles button:hover,
+.styles button:focus {
+    color: #f3ee94;
+}
+
+.styles select {
+    appearance: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #efe61f;
+    border-radius: 5px;
+    font-weight: 500;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='16' fill='yellow' class='bi bi-caret-down' viewBox='2 0 17 16'><path d='M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z'/></svg>") no-repeat;
+    background-position: right center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 30px;
+}
+
+.styles option {
+    color: black;
+}

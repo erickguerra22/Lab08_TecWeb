@@ -1,0 +1,8 @@
+.styles {
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
+  height: 80vh;
+  width: 80vw;
+}

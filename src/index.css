@@ -1,0 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+:root {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/128/155/original/abstract-design-of-falling-snow-or-ash-particles-blue-particles-on-the-background-particle-movement-on-dark-background-particles-in-space-particle-moving-on-dark-background-star-on-dark-backround-free-video.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
