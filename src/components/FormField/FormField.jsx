@@ -17,7 +17,6 @@ const FormField = ({
   hidden,
   alone,
   options,
-  color,
 }) => {
   const getComponent = () => {
     switch (fieldType) {
@@ -30,7 +29,7 @@ const FormField = ({
             type="text"
             required={required}
             onChange={onChange}
-            style={{ display: `${hidden ? 'none' : 'inherit'}`, color }}
+            style={{ display: `${hidden ? 'none' : 'inherit'}` }}
           />
         )
       case 'button':
@@ -40,7 +39,7 @@ const FormField = ({
             name={name}
             type="button"
             onClick={onClick}
-            style={{ display: `${hidden ? 'none' : 'inherit'}`, color }}
+            style={{ display: `${hidden ? 'none' : 'inherit'}` }}
           >
             {text}
           </button>
@@ -52,7 +51,7 @@ const FormField = ({
             name={name}
             type="submit"
             onClick={onClick}
-            style={{ display: `${hidden ? 'none' : 'inherit'}`, color }}
+            style={{ display: `${hidden ? 'none' : 'inherit'}` }}
           >
             {text}
           </button>
@@ -67,7 +66,7 @@ const FormField = ({
               defaultChecked={isChecked}
               required={required}
               onClick={onClick}
-              style={{ display: `${hidden ? 'none' : 'inherit'}`, color }}
+              style={{ display: `${hidden ? 'none' : 'inherit'}` }}
               tabIndex={-1}
             />
             <label>{label}</label>
@@ -83,7 +82,7 @@ const FormField = ({
             required={required}
             onChange={onChange}
             style={{
-              maxWidth: '3em', textAlign: 'center', display: `${hidden ? 'none' : 'inherit'}`, color,
+              maxWidth: '3em', textAlign: 'center', display: `${hidden ? 'none' : 'inherit'}`,
             }}
           />
         )
@@ -94,7 +93,7 @@ const FormField = ({
             placeholder={placeholder}
             required={required}
             onChange={onChange}
-            style={{ display: `${hidden ? 'none' : 'inherit'}`, color }}
+            style={{ display: `${hidden ? 'none' : 'inherit'}` }}
           />
         )
       case 'hidden':
@@ -108,13 +107,13 @@ const FormField = ({
               placeholder={placeholder}
               required={required}
               onChange={onChange}
-              style={{ maxWidth: '50px', textAlign: 'center', color }}
+              style={{ maxWidth: '50px', textAlign: 'center' }}
             />
           </>
         )
       case 'dropdown':
         return (
-          <select defaultValue="" onChange={onChange} required={required} style={{ color }}>
+          <select defaultValue="" onChange={onChange} required={required}>
             <option value="" disabled hidden>{placeholder}</option>
             {
               // eslint-disable-next-line react/no-array-index-key
@@ -154,7 +153,6 @@ FormField.defaultProps = {
   hidden: false,
   alone: false,
   options: [],
-  color: 'white',
 }
 
 FormField.propTypes = {
@@ -172,7 +170,6 @@ FormField.propTypes = {
   hidden: PropTypes.bool,
   alone: PropTypes.bool,
   options: PropTypes.arrayOf(string),
-  color: PropTypes.string,
 }
 
 export default FormField
